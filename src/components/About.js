@@ -6,11 +6,11 @@ const { Title, Paragraph, Text } = Typography;
 const About = () => {
   return (
     <section id="about">
-      <Row align="middle">
-        <Col span={6}>
+      <Row align="middle" justify="center">
+        <Col xs={24} sm={24} md={6}>
           <Avatar size={200} src="/images/avatar.jpg" />
         </Col>
-        <Col span={18}>
+        <Col xs={24} sm={24} md={18}>
           <Title level={1}>Henry Lundberg Navntoft</Title>
           <Title level={3}>Designer & Developer</Title>
         </Col>
@@ -39,12 +39,14 @@ const About = () => {
         Continue scrolling!
       </Paragraph>
       <Divider></Divider>
-      <Row>
-        <Tag color="blue">Web Design</Tag>
-        <Tag color="green">Development</Tag>
-        <Tag color="orange">Optimization</Tag>
-        <Tag color="red">UI/UX</Tag>
-        <Tag color="purple">User-Friendly</Tag>
+      <Row justify="center">
+        <Col xs={24} sm={24} md={18}>
+          <Tag color="blue">Web Design</Tag>
+          <Tag color="green">Development</Tag>
+          <Tag color="orange">Optimization</Tag>
+          <Tag color="red">UI/UX</Tag>
+          <Tag color="purple">User-Friendly</Tag>
+        </Col>
       </Row>
     </section>
   );

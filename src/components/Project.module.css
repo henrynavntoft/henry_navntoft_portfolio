@@ -9,3 +9,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.project-card .ant-typography {
+  margin-top: 0;
+}
+
+.project-card .ant-typography > :last-child {
+  margin-bottom: 0;
+}
