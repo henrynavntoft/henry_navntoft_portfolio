@@ -6,7 +6,7 @@ const { Title, Paragraph, Link } = Typography;
 
 const Projects = ({ projects }) => {
   return (
-    <section id="project-container">
+    <section id="project-container" style={{ marginTop: "2rem" }}>
       <Title level={2}>Projects</Title>
       <div className={styles["projects-wrapper"]}>
         <Row gutter={[16, 16]} id="projects">

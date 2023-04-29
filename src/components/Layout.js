@@ -9,10 +9,9 @@ const { Content } = AntLayout;
 const Layout = ({ children }) => {
   return (
     <AntLayout>
-      <Header />
       <Content
         style={{
-          padding: "3rem",
+          padding: "5rem",
         }}
       >
         {children}

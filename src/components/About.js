@@ -1,13 +1,21 @@
 import React from "react";
-import { Typography } from "antd";
+import { Typography, Avatar, Divider, Tag, Row, Col } from "antd";
 
 const { Title, Paragraph, Text } = Typography;
 
 const About = () => {
   return (
     <section id="about">
-      <Title level={1}>Henry Lundberg Navntoft</Title>
-      <Title level={3}>Designer & Developer</Title>
+      <Row align="middle">
+        <Col span={6}>
+          <Avatar size={200} src="/images/avatar.jpg" />
+        </Col>
+        <Col span={18}>
+          <Title level={1}>Henry Lundberg Navntoft</Title>
+          <Title level={3}>Designer & Developer</Title>
+        </Col>
+      </Row>
+      <Divider></Divider>
       <Paragraph>
         Born in 2000 in <Text strong>Copenhagen, Denmark.</Text>
         <br />
@@ -19,7 +27,7 @@ const About = () => {
         perspective to make existing designs even more effective and{" "}
         <Text strong>user-friendly</Text>.
         <br />
-        <br />I am passionate about improving and optimising web experiences,
+        <br />I am passionate about improving and optimizing web experiences,
         and I aspire to help create digital spaces that are both{" "}
         <Text strong>intuitive</Text> and <Text strong>visually appealing</Text>
         .
@@ -30,6 +38,14 @@ const About = () => {
         </Text>{" "}
         Continue scrolling!
       </Paragraph>
+      <Divider></Divider>
+      <Row>
+        <Tag color="blue">Web Design</Tag>
+        <Tag color="green">Development</Tag>
+        <Tag color="orange">Optimization</Tag>
+        <Tag color="red">UI/UX</Tag>
+        <Tag color="purple">User-Friendly</Tag>
+      </Row>
     </section>
   );
 };
