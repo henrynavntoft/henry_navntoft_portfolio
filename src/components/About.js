@@ -39,8 +39,8 @@ const About = () => {
         Continue scrolling!
       </Paragraph>
       <Divider></Divider>
-      <Row justify="center">
-        <Col xs={24} sm={24} md={18}>
+      <Row>
+        <Col>
           <Tag color="blue">Web Design</Tag>
           <Tag color="green">Development</Tag>
           <Tag color="orange">Optimization</Tag>
